@@ -22,6 +22,7 @@ Answer: Mentioned below are the keywords that are used for writing a scenario:
 Given
 When
 Then
+
 And
 Q #5) What is the purpose of a Scenario Outline in Cucumber?
 
