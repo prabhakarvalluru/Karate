@@ -1,0 +1,91 @@
+Most Frequently Asked Cucumber Interview Questions
+Q #1) Explain Cucumber shortly.
+
+Answer: Cucumber is a tool that is based on Behavior Driven Development (BDD) methodology.
+
+The main aim of the Behavior Driven Development framework is to make various project roles such as Business Analysts, Quality Assurance, Developers, etc., understand the application without diving deep into the technical aspects.
+
+Q #2) What language is used by Cucumber?
+
+Answer: Gherkin is the language that is used by the Cucumber tool. It is a simple English representation of the application behavior. Gherkin language uses several keywords to describe the behavior of applications such as Feature, Scenario, Scenario Outline, Given, When, Then, etc.
+
+Q #3) What is meant by a feature file?
+
+Answer: A feature file must provide a high-level description of an Application Under Test (AUT). The first line of the feature file must start with the keyword ‘Feature’ followed by the description of the application under test.
+
+A feature file may include multiple scenarios within the same file. A feature file has the extension .feature.
+
+Q #4) What are the various keywords that are used in Cucumber for writing a scenario?
+
+Answer: Mentioned below are the keywords that are used for writing a scenario:
+
+Given
+When
+Then
+And
+Q #5) What is the purpose of a Scenario Outline in Cucumber?
+
+Answer: Scenario outline is a way of parameterization of scenarios. This is ideally used when the same scenario needs to be executed for multiple sets of data, however, the test steps remain the same. Scenario Outline must be followed by the keyword ‘Examples’, which specify the set of values for each parameter.
+
+Q #6) What programming language is used by Cucumber?
+
+Answer: Cucumber tool provides support for multiple programming languages such as Java, .Net, Ruby etc. It can also be integrated with multiple tools such as Selenium, Capybara, etc.
+
+Q #7) What is the purpose of the Step Definition file in Cucumber?
+
+Answer: A step definition file in Cucumber is used to segregate the feature files from the underlying code. Each step of the feature file can be mapped to a corresponding method on the Step Definition file.
+
+While feature files are written in an easily understandable language like, Gherkin, Step Definition files are written in programming languages such as Java, .Net, Ruby, etc.
+
+Q #8) What are the major advantages of the Cucumber framework?
+
+Answer: Given below are the advantages of the Cucumber Gherkin framework that make Cucumber an ideal choice for rapidly evolving Agile methodology in today’s corporate world.
+
+Cucumber is an open-source tool.
+Plain Text representation makes it easier for non-technical users to understand the scenarios.
+It bridges the communication gap between various project stakeholders such as Business Analysts, Developers, and Quality Assurance personnel.
+Automation test cases developed using the Cucumber tool are easier to maintain and understand as well.
+Easy to integrate with other tools such as Selenium and Capybara.
+Q #9) Provide an example of a feature file using the Cucumber framework.
+
+Answer: Following is an example of a feature file for the scenario ‘Login into the application’:
+
+Feature: Login to the application under test.
+Scenario: Login to the application.
+
+Open the Chrome browser and launch the application.
+When the user enters the username onto the UserName field.
+And User enters the password into the Password field.
+When the user clicks on the Login button.
+Then validate if the user login is successful.
+Q #10) Provide an example of a Scenario Outline using the Cucumber framework.
+
+Answer: The following is an example of a Scenario Outline keyword for the scenario ‘Upload a file’. The number of parameter values to be included in the feature file is based on the tester’s choice.
+
+Scenario Outline: Upload a file
+
+Given that the user is on upload file screen.
+When a user clicks on the Browse button.
+And user enters <filename> onto the upload textbox.
+And user clicks on the enter button.
+Then verify that the file upload is successful.
+
+Example:
+
+|filename|
+|file1|
+|file2|
+
+Q #11) What is the purpose of the Behaviour Driven Development (BDD) methodology in the real world?
+
+Answer: BDD is a methodology to understand the functionality of an application in the simple plain text representation.
+
+The main aim of the Behavior Driven Development framework is to make various project roles such as Business Analysts, Quality Assurance, Developers, Support Teams understand the application without diving deep into the technical aspects.
+
+Q #12) What is the limit for the maximum number of scenarios that can be included in the feature file?
+
+Answer: A feature file can contain a maximum of 10 scenarios, but the number can vary from project to project and from one organization to another. But it is generally advisable to limit the number of scenarios included in the feature file.
+
+Q #13) What is the use of Background keyword in Cucumber?
+
+Answer: Background keyword is used to group multiple given statements into a single group. This is generally used when the same set of given statements are repeated in each scenario of the feature file.
