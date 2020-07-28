@@ -1,0 +1,507 @@
+12:45:47.377 [print] static -- I am static Hello
+12:45:47.412 [print] writerline -- 
+12:45:47.433 [print] abc --
+.js'), javascript evaluation failed: function(){
+var config = {
+Url : 'https://reqres.in/api/users/2'
+}
+var env = karate.env
+karate.log("Environemnt used for execution is: ",env)
+if(env=='dev'){
+config.url = 'https://dev.in/api/users/2'
+}
+else if(env=='qa'){
+config.url = 'https://qa.in/api/users/2'
+}
+
+}
+return config;
+}, <eval>:15:0 Invalid return statement
+return config;
+^ in <eval> at line number 15 at column number 0
+at column number 17
+f-8
+1 < Date: Sat, 25 Jul 2020 23:22:14 GMT
+1 < Etag: W/"5d-9XL6rWPM3hppHZEVXxxt22DFepk"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=dcc421aff5c82693296d080c8d111674a1595719331; expires=Mon, 24-Aug-20 23:22:11 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 0429e1c5fb0000e624042d7200000001
+{"email":"<email>","password":"<password>","id":"989","createdAt":"2020-07-25T23:22:14.353Z"}
+
+00:22:13.659 [print] response1 --- {
+  "createdAt": "2020-07-25T23:22:14.353Z",
+  "password": "<password>",
+  "id": "989",
+  "email": "<email>"
+}
+
+00:22:13.667 request:
+1 > POST https://reqres.in/api/users?delay=3
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 43
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.2)
+{"email":"<email>","password":"<password>"}
+
+00:22:16.843 response time in milliseconds: 3176.34
+1 < 201
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 5b899f30eba80085-LHR
+1 < Connection: keep-alive
+1 < Content-Length: 93
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 25 Jul 2020 23:22:17 GMT
+1 < Etag: W/"5d-ZMU9I3KEycL2569hTQJYCBQguaw"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=da20832e7ff793da5ce93b305b8f3f2de1595719334; expires=Mon, 24-Aug-20 23:22:14 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 0429e1d29200000085dc206200000001
+{"email":"<email>","password":"<password>","id":"357","createdAt":"2020-07-25T23:22:17.576Z"}
+
+00:22:16.845 [print] response1 --- {
+  "createdAt": "2020-07-25T23:22:17.576Z",
+  "password": "<password>",
+  "id": "357",
+  "email": "<email>"
+}
+
+00:22:16.849 request:
+1 > POST https://reqres.in/api/users?delay=3
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 43
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.2)
+{"email":"<email>","password":"<password>"}
+
+00:22:20.280 response time in milliseconds: 3429.45
+1 < 201
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 5b899f464d480756-LHR
+1 < Connection: keep-alive
+1 < Content-Length: 93
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 25 Jul 2020 23:22:21 GMT
+1 < Etag: W/"5d-64/+6CpT8SqQAZiXQFK3A/OUM+o"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=de59dafa84dc2d027b838542ad11141a31595719337; expires=Mon, 24-Aug-20 23:22:17 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 0429e1dfee00000756648ae200000001
+{"email":"<email>","password":"<password>","id":"659","createdAt":"2020-07-25T23:22:20.997Z"}
+
+00:22:20.281 [print] response1 --- {
+  "createdAt": "2020-07-25T23:22:20.997Z",
+  "password": "<password>",
+  "id": "659",
+  "email": "<email>"
+}
+
+00:22:20.286 request:
+1 > POST https://reqres.in/api/users?delay=3
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 43
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.2)
+{"email":"<email>","password":"<password>"}
+
+00:22:23.512 response time in milliseconds: 3225.45
+1 < 201
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 5b899f5a7802ce3f-LHR
+1 < Connection: keep-alive
+1 < Content-Length: 93
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 25 Jul 2020 23:22:24 GMT
+1 < Etag: W/"5d-i7EaSzU8Az5CpeRz4WRGqWha3Bc"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d7b4a15551fe634de291c11a93a27c5e51595719341; expires=Mon, 24-Aug-20 23:22:21 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 0429e1ec8f0000ce3f939c5200000001
+{"email":"<email>","password":"<password>","id":"849","createdAt":"2020-07-25T23:22:24.230Z"}
+
+00:22:23.513 [print] response1 --- {
+  "createdAt": "2020-07-25T23:22:24.230Z",
+  "password": "<password>",
+  "id": "849",
+  "email": "<email>"
+}
+
+00:22:23.519 request:
+1 > POST https://reqres.in/api/users?delay=3
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 43
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.2)
+{"email":"<email>","password":"<password>"}
+
+00:22:26.690 response time in milliseconds: 3169.71
+1 < 201
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 5b899f6e4a3dbba0-LHR
+1 < Connection: keep-alive
+1 < Content-Length: 93
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 25 Jul 2020 23:22:27 GMT
+1 < Etag: W/"5d-y/1/Gws+QdCxuG1lETnGBvwQAxw"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d5807e2e438ae42f118fe752d8e3fcc511595719344; expires=Mon, 24-Aug-20 23:22:24 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 0429e1f8eb0000bba0990f7200000001
+{"email":"<email>","password":"<password>","id":"617","createdAt":"2020-07-25T23:22:27.406Z"}
+
+00:22:26.692 [print] response1 --- {
+  "createdAt": "2020-07-25T23:22:27.406Z",
+  "password": "<password>",
+  "id": "617",
+  "email": "<email>"
+}
+
+00:22:26.694 request:
+1 > POST https://reqres.in/api/users?delay=3
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 43
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.2)
+{"email":"<email>","password":"<password>"}
+
+00:22:29.874 response time in milliseconds: 3178.95
+1 < 201
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 5b899f825f27e630-LHR
+1 < Connection: keep-alive
+1 < Content-Length: 92
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 25 Jul 2020 23:22:30 GMT
+1 < Etag: W/"5c-hQIS3rC1VajopyZYes+f83ubdgs"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d65bcb2372f60f1454a1177e5c5b7adab1595719347; expires=Mon, 24-Aug-20 23:22:27 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 0429e205770000e63039a71200000001
+{"email":"<email>","password":"<password>","id":"40","createdAt":"2020-07-25T23:22:30.605Z"}
+
+00:22:29.875 [print] response1 --- {
+  "createdAt": "2020-07-25T23:22:30.605Z",
+  "password": "<password>",
+  "id": "40",
+  "email": "<email>"
+}
+
+00:22:29.880 request:
+1 > POST https://reqres.in/api/users?delay=3
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 43
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.2)
+{"email":"<email>","password":"<password>"}
+
+00:22:33.033 response time in milliseconds: 3152.28
+1 < 201
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 5b899f961fbae604-LHR
+1 < Connection: keep-alive
+1 < Content-Length: 93
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 25 Jul 2020 23:22:33 GMT
+1 < Etag: W/"5d-nFkBnbEObm0k/c+NvBgV9EZLN3o"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d8cde99a9b3db5bccad39fa5c1bebef031595719350; expires=Mon, 24-Aug-20 23:22:30 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 0429e211cc0000e6043c08f200000001
+{"email":"<email>","password":"<password>","id":"493","createdAt":"2020-07-25T23:22:33.763Z"}
+
+00:22:33.034 [print] response1 --- {
+  "createdAt": "2020-07-25T23:22:33.763Z",
+  "password": "<password>",
+  "id": "493",
+  "email": "<email>"
+}
+
+00:22:33.037 request:
+1 > POST https://reqres.in/api/users?delay=3
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 43
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.2)
+{"email":"<email>","password":"<password>"}
+
+00:22:36.228 response time in milliseconds: 3189.71
+1 < 201
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 5b899fa9ff83dc4b-LHR
+1 < Connection: keep-alive
+1 < Content-Length: 93
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 25 Jul 2020 23:22:36 GMT
+1 < Etag: W/"5d-MxkUPeo2EayQxNLhW9evykgKCXk"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=deddd7f9db4f9824b74ff36a3d55201691595719353; expires=Mon, 24-Aug-20 23:22:33 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 0429e21e3a0000dc4bdca98200000001
+{"email":"<email>","password":"<password>","id":"836","createdAt":"2020-07-25T23:22:36.941Z"}
+
+00:22:36.231 [print] response1 --- {
+  "createdAt": "2020-07-25T23:22:36.941Z",
+  "password": "<password>",
+  "id": "836",
+  "email": "<email>"
+}
+
+00:22:36.237 request:
+1 > POST https://reqres.in/api/users?delay=3
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 43
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.2)
+{"email":"<email>","password":"<password>"}
+
+00:22:39.461 response time in milliseconds: 3223.44
+1 < 201
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 5b899fbe2858ce43-LHR
+1 < Connection: keep-alive
+1 < Content-Length: 93
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 25 Jul 2020 23:22:40 GMT
+1 < Etag: W/"5d-njK09oqog8Ce/Za0VoiBARO3610"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d2de07add2a0ce1d8871bde0a6a19dc5f1595719357; expires=Mon, 24-Aug-20 23:22:37 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 0429e22ad60000ce43889b1200000001
+{"email":"<email>","password":"<password>","id":"113","createdAt":"2020-07-25T23:22:40.174Z"}
+
+00:22:39.462 [print] response1 --- {
+  "createdAt": "2020-07-25T23:22:40.174Z",
+  "password": "<password>",
+  "id": "113",
+  "email": "<email>"
+}
+
+00:22:39.466 request:
+1 > POST https://reqres.in/api/users?delay=3
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 43
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.2)
+{"email":"<email>","password":"<password>"}
+
+00:22:42.690 response time in milliseconds: 3224.92
+1 < 201
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 5b899fd24fc5ce3b-LHR
+1 < Connection: keep-alive
+1 < Content-Length: 91
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 25 Jul 2020 23:22:43 GMT
+1 < Etag: W/"5b-yT1OGNYwVgUrpwHumjNCQfnJSVk"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=ddf8922a72f21eeed91510e6ee5f453c31595719360; expires=Mon, 24-Aug-20 23:22:40 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 0429e237710000ce3ba9280200000001
+{"email":"<email>","password":"<password>","id":"7","createdAt":"2020-07-25T23:22:43.385Z"}
+
+00:22:42.691 [print] response1 --- {
+  "createdAt": "2020-07-25T23:22:43.385Z",
+  "password": "<password>",
+  "id": "7",
+  "email": "<email>"
+}
+
+00:22:42.696 request:
+1 > POST https://reqres.in/api/users?delay=3
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 43
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.2)
+{"email":"<email>","password":"<password>"}
+
+00:22:46.046 response time in milliseconds: 3349.79
+1 < 201
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 5b899fe76902f433-LHR
+1 < Connection: keep-alive
+1 < Content-Length: 93
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 25 Jul 2020 23:22:46 GMT
+1 < Etag: W/"5d-2+Td0DSHvZnBGxriE12Hz6mZXps"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=dc26a0059852ac09a39fe48b10a72b2b21595719363; expires=Mon, 24-Aug-20 23:22:43 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 0429e244a20000f433c4a36200000001
+{"email":"<email>","password":"<password>","id":"271","createdAt":"2020-07-25T23:22:46.762Z"}
+
+00:22:46.047 [print] response1 --- {
+  "createdAt": "2020-07-25T23:22:46.762Z",
+  "password": "<password>",
+  "id": "271",
+  "email": "<email>"
+}
+
+00:22:46.052 request:
+1 > POST https://reqres.in/api/users?delay=3
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 43
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.2)
+{"email":"<email>","password":"<password>"}
+
+00:22:49.517 response time in milliseconds: 3464.60
+1 < 201
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 5b899ffd0852e5f4-LHR
+1 < Connection: keep-alive
+1 < Content-Length: 93
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 25 Jul 2020 23:22:50 GMT
+1 < Etag: W/"5d-72DndwhIs8gwJu6Lwwkopt3/e9s"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d5750492a7aa54d29922d967bf0335dbf1595719367; expires=Mon, 24-Aug-20 23:22:47 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 0429e252200000e5f44f22e200000001
+{"email":"<email>","password":"<password>","id":"793","createdAt":"2020-07-25T23:22:50.223Z"}
+
+00:22:49.518 [print] response1 --- {
+  "createdAt": "2020-07-25T23:22:50.223Z",
+  "password": "<password>",
+  "id": "793",
+  "email": "<email>"
+}
+
+00:22:49.522 request:
+1 > POST https://reqres.in/api/users?delay=3
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 43
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.2)
+{"email":"<email>","password":"<password>"}
+
+00:22:52.881 response time in milliseconds: 3357.67
+1 < 201
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 5b89a0121d150656-LHR
+1 < Connection: keep-alive
+1 < Content-Length: 93
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 25 Jul 2020 23:22:53 GMT
+1 < Etag: W/"5d-xI2XmsksNtZkQzBuNcAhIro7Uuw"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=dac982117b393b80833f2be43633f26271595719370; expires=Mon, 24-Aug-20 23:22:50 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 0429e25f4e000006566320e200000001
+{"email":"<email>","password":"<password>","id":"901","createdAt":"2020-07-25T23:22:53.611Z"}
+
+00:22:52.882 [print] response1 --- {
+  "createdAt": "2020-07-25T23:22:53.611Z",
+  "password": "<password>",
+  "id": "901",
+  "email": "<email>"
+}
+
+00:22:52.888 request:
+1 > POST https://reqres.in/api/users?delay=3
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 43
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.2)
+{"email":"<email>","password":"<password>"}
+
+00:22:56.051 response time in milliseconds: 3162.04
+1 < 201
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 5b89a025e87a079a-LHR
+1 < Connection: keep-alive
+1 < Content-Length: 93
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 25 Jul 2020 23:22:56 GMT
+1 < Etag: W/"5d-+UMtsTQjo3kw/1Am4BoOajdQvoc"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d2c5e342b9b8d7a39fb2e0813a6ef1f5c1595719373; expires=Mon, 24-Aug-20 23:22:53 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 0429e26bae0000079acb803200000001
+{"email":"<email>","password":"<password>","id":"588","createdAt":"2020-07-25T23:22:56.783Z"}
+
+00:22:56.051 [print] response1 --- {
+  "createdAt": "2020-07-25T23:22:56.783Z",
+  "password": "<password>",
+  "id": "588",
+  "email": "<email>"
+}
+
+00:22:56.054 request:
+1 > POST https://reqres.in/api/users?delay=3
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 43
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.2)
+{"email":"<email>","password":"<password>"}
+
+>"}
+
