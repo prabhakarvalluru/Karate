@@ -1,0 +1,63 @@
+Karate Web Service Testing
+What is Karate?
+Karate is a framework designed to implement Web Service tests. It runs on Cucumber-JVM architecture. Tests are written with Cucumber-Gherkin syntax. It lets you test web services without coding by Karate’s strong DSL structure and create rich reports with Cucumber report support. The main features of Karate are as follows
+
+Not: Bu makalenin TÜRKÇE versiyonu için tıklayınız.
+
+Test JSON andSOAP-based webservices
+Supports both JUnit and TestNG
+Jsonpath and Xpath are used to extract data.
+Any feature can call any features and makes use of external functions.
+Ability to define Global variables
+JavaScript and Java codes can be located in “.feature” files.
+How does Karate Works?
+As stated in the beginning, Karate runs on Cucumber-JVM that‘s why a runner class should be implemented to with @RunWith(Karate.class) in order to make use of JUnit. You can also use @CucumberOptions annotation to configure tour tests. In the background, KArate runs JavaScript Nashorn so you can execute javascript and java snippets. It also supports parallelism to shorten to execute time of your tests.
+
+You can use Maven or Gradle to create a Karate project. In this tutorial, we are using Maven and JUnit. In order to create mock REST APIs, Mockoon tool is used.
+
+For logging purpose, LogBack library is used. For this reason, don’t forget to create your logback-test.xml. For web services configs, you need to define a karate-config.js file to configure the timeout, proxy, URL, SSL configurations.
+
+Let’s create our project with Apache Maven.
+
+
+
+We used Karate Archetype to create a Karate project. POM.xml and Project Structure are as follows:
+
+
+
+I used Mockoon tool to mock a REST API to fetch pharmacies of a given city. We are going to use those two methods in the tutorial.
+
+-/pharmacies/city
+
+-/pharmacies/city/{cityId}
+
+
+
+Now, we define karate-config.js and make necessary configurations. We only configure Baseurl, port, API endpoints in this tutorial, you can define your SSL and proxy configurations in case you need it.
+
+
+
+Let’s create our feature files under test/resources folder of our project. I create a folder with name “city” and place my “city.feature” under it.
+
+First, we make a GET request to a web service. Then we parse its response to extract a variable to make use of it in another feature.
+
+
+
+Let’s see what have we done!
+
+In the “Background”, we read the base URL of our webservices defined in karate-config.js
+We define a tag for our test case
+In Given step, we define the web services path that we are going to make. This time it’s ‘city’ path. Right now, we make a call to “http://localhost:…./city”
+In When step, we make the GET request.
+In Then step we make our first assertion and control if the response is HTTP 200 or not. Status is a basic function of Karate Framework.
+In And match step we make an assertion by using jsonpath and control if the total number of city against a static value. Match function helps you do comparaisons.
+In And Def steps, we create CityName, CityCodes variables to be able to use them in another Karate feature or test cases. In this example, we extract the city_id and city_name of 8th city returned in JSON response.
+
+In the PharmaciesByCity scenario, we are going to use the variable created in the first test.
+
+In def citycall line, we create a reference to the first feature by using call read function of Karate. This runs the first test case, by doing so our variable is set.
+In Given path city line, we define the path to make a call
+In And path citycall.CityCode line, we use the variable defined in the first test case and add this variable to our request.  Now we make a call to “http://localhost:…./city/citycall.CityCode”
+The rest is exactly the same as in the first test case except for the last line.
+In match each line, we do an assertion to check if all the pharmacies fetched by our web services have the same city field by using the cityCall.cityName variable extracted in the first test case. Match each function works like a foreach loop.
+As you can see, we successfully managed to test two web services without any coding except for creating a CucumberRunner.java file to start the execution.
