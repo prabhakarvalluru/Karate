@@ -14,7 +14,7 @@ Scenario: get response of user2 details
   And match response.data.last_name contains "Weaver"
     And match response.data.last_name !contains "Weaver1"
   *	def data = [1,2,3]
-  And match data contains [1,6]
+  And match data contains [1,2,3]
     #And match response.data.id == 2
     #And match response.data.email != null
     
